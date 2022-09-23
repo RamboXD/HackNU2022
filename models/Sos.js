@@ -1,16 +1,16 @@
 const mongoose = require("mongoose");
 
 const SOSSchema = new mongoose.Schema({
-  Latitude: { type: Number, required: true },
-  Longitude: { type: Number, required: true },
-  Altitude: { type: Number, required: true },
-  Identifier: { type: Number, required: true },
-  Timestamp: { type: Number, required: true },
-  FloorLabel: { type: Number, required: true },
-  HorizontalAccuracy: { type: Number, required: true },
-  VerticalAccuracy: { type: Number, required: true },
-  ConfidenceInLocationAccuracy: { type: Number, required: true },
-  Activity: { type: String, required: true },
+  Latitude: { type: Number, required: false },
+  Longitude: { type: Number, required: false },
+  Altitude: { type: Number, required: false },
+  Identifier: { type: Number, required: false },
+  Timestamp: { type: Number, required: false },
+  FloorLabel: { type: Number, required: false },
+  HorizontalAccuracy: { type: Number, required: false },
+  VerticalAccuracy: { type: Number, required: false },
+  ConfidenceInLocationAccuracy: { type: Number, required: false },
+  Activity: { type: String, required: false },
   dateCreated: { type: Date, default: new Date() },
 });
 
